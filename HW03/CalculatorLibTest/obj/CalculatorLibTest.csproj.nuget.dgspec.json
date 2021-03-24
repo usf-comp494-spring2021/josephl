@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\joesc\\source\\repos\\CalculatorLibTest\\CalculatorLibTest.csproj": {}
+    "C:\\Users\\joesc\\OneDrive\\Desktop\\C#\\gitRepo\\HW03\\CalculatorLibTest\\CalculatorLibTest.csproj": {}
   },
   "projects": {
-    "C:\\Users\\joesc\\source\\repos\\CalculatorLibTest\\CalculatorLibTest.csproj": {
+    "C:\\Users\\joesc\\OneDrive\\Desktop\\C#\\gitRepo\\HW03\\CalculatorLibTest\\CalculatorLibTest.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joesc\\source\\repos\\CalculatorLibTest\\CalculatorLibTest.csproj",
+        "projectUniqueName": "C:\\Users\\joesc\\OneDrive\\Desktop\\C#\\gitRepo\\HW03\\CalculatorLibTest\\CalculatorLibTest.csproj",
         "projectName": "CalculatorLibTest",
-        "projectPath": "C:\\Users\\joesc\\source\\repos\\CalculatorLibTest\\CalculatorLibTest.csproj",
+        "projectPath": "C:\\Users\\joesc\\OneDrive\\Desktop\\C#\\gitRepo\\HW03\\CalculatorLibTest\\CalculatorLibTest.csproj",
         "packagesPath": "C:\\Users\\joesc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\joesc\\source\\repos\\CalculatorLibTest\\obj\\",
+        "outputPath": "C:\\Users\\joesc\\OneDrive\\Desktop\\C#\\gitRepo\\HW03\\CalculatorLibTest\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -32,8 +32,8 @@
           "net5.0": {
             "targetAlias": "net5.0",
             "projectReferences": {
-              "C:\\Users\\joesc\\source\\repos\\CalculatorLib\\CalculatorLib.csproj": {
-                "projectPath": "C:\\Users\\joesc\\source\\repos\\CalculatorLib\\CalculatorLib.csproj"
+              "C:\\Users\\joesc\\OneDrive\\Desktop\\C#\\gitRepo\\HW03\\CalculatorLib\\CalculatorLib.csproj": {
+                "projectPath": "C:\\Users\\joesc\\OneDrive\\Desktop\\C#\\gitRepo\\HW03\\CalculatorLib\\CalculatorLib.csproj"
               }
             }
           }
@@ -88,14 +88,14 @@
         }
       }
     },
-    "C:\\Users\\joesc\\source\\repos\\CalculatorLib\\CalculatorLib.csproj": {
+    "C:\\Users\\joesc\\OneDrive\\Desktop\\C#\\gitRepo\\HW03\\CalculatorLib\\CalculatorLib.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joesc\\source\\repos\\CalculatorLib\\CalculatorLib.csproj",
+        "projectUniqueName": "C:\\Users\\joesc\\OneDrive\\Desktop\\C#\\gitRepo\\HW03\\CalculatorLib\\CalculatorLib.csproj",
         "projectName": "CalculatorLib",
-        "projectPath": "C:\\Users\\joesc\\source\\repos\\CalculatorLib\\CalculatorLib.csproj",
+        "projectPath": "C:\\Users\\joesc\\OneDrive\\Desktop\\C#\\gitRepo\\HW03\\CalculatorLib\\CalculatorLib.csproj",
         "packagesPath": "C:\\Users\\joesc\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\joesc\\source\\repos\\CalculatorLib\\obj\\",
+        "outputPath": "C:\\Users\\joesc\\OneDrive\\Desktop\\C#\\gitRepo\\HW03\\CalculatorLib\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

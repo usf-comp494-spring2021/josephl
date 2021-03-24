@@ -1,13 +1,14 @@
 /*
 Joseph LePage
-2/15/21
+3/19/21
 C# and .net programming
-Homework 3
- */
+Midterm
+*/
 
 using CalculatorLib;
 using System;
 using Xunit;
+using System.IO;
 
 namespace CalculatorLibTest
 {
@@ -75,6 +76,36 @@ namespace CalculatorLibTest
 
             //Assert
             Assert.Equal(expectedQuotient, actualQuotient);
+        }
+
+        [Fact]
+        public void TestMeanAndMedianFunctions()
+        {
+            //Arrange
+            string[] initialArray = System.IO.File.ReadAllLines("C: /Users/joesc/OneDrive/Desktop/C#/gitRepo/HW03/CalculatorLibTest/CalcInput.txt");
+            double[] numberArray = new double[15];
+            for (int i = 0; i < initialArray.Length; i++)
+            {
+                numberArray[i] = Convert.ToDouble(initialArray[i]);
+            }
+            var calc = new Calculator();
+ 
+            //Act
+            double expectedMeanResult = 8.0;
+            double actualMeanResult = calc.findMean(numberArray);
+
+            //Assert
+            Assert.Equal(expectedMeanResult, actualMeanResult);
+
+            //Act
+            double expectedMedianResult = 8.0;
+            double actualMedianResult = calc.findMedian(numberArray);
+
+            //Assert
+            Assert.Equal(expectedMedianResult, actualMedianResult);
+
+            //Assign to file
+
         }
     }
 }
