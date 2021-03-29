@@ -20,7 +20,7 @@ namespace CalculatorLibTest
             //Arrange
             double a = 2;
             double b = 4;
-            double expectedSum = 6;
+            double expectedSum = 9;
             var calc = new Calculator();
 
             //Act
@@ -78,34 +78,34 @@ namespace CalculatorLibTest
             Assert.Equal(expectedQuotient, actualQuotient);
         }
 
-        [Fact]
-        public void TestMeanAndMedianFunctions()
-        {
-            //Arrange
-            string[] initialArray = System.IO.File.ReadAllLines("C: /Users/joesc/OneDrive/Desktop/C#/gitRepo/HW03/CalculatorLibTest/CalcInput.txt");
-            double[] numberArray = new double[15];
-            for (int i = 0; i < initialArray.Length; i++)
-            {
-                numberArray[i] = Convert.ToDouble(initialArray[i]);
-            }
-            var calc = new Calculator();
+        //[Fact]
+        ////public void TestMeanAndMedianFunctions()
+        ////{
+        ////    //Arrange
+        ////    string[] initialArray = System.IO.File.ReadAllLines("C: /Users/joesc/OneDrive/Desktop/C#/gitRepo/HW03/CalculatorLibTest/CalcInput.txt");
+        ////    double[] numberArray = new double[15];
+        ////    for (int i = 0; i < initialArray.Length; i++)
+        ////    {
+        ////        numberArray[i] = Convert.ToDouble(initialArray[i]);
+        ////    }
+        ////    var calc = new Calculator();
  
-            //Act
-            double expectedMeanResult = 8.0;
-            double actualMeanResult = calc.findMean(numberArray);
+        ////    //Act
+        ////    double expectedMeanResult = 8.0;
+        ////    double actualMeanResult = calc.findMean(numberArray);
 
-            //Assert
-            Assert.Equal(expectedMeanResult, actualMeanResult);
+        ////    //Assert
+        ////    Assert.Equal(expectedMeanResult, actualMeanResult);
 
-            //Act
-            double expectedMedianResult = 8.0;
-            double actualMedianResult = calc.findMedian(numberArray);
+        ////    //Act
+        ////    double expectedMedianResult = 8.0;
+        ////    double actualMedianResult = calc.findMedian(numberArray);
 
-            //Assert
-            Assert.Equal(expectedMedianResult, actualMedianResult);
+        ////    //Assert
+        ////    Assert.Equal(expectedMedianResult, actualMedianResult);
 
-            //Assign to file
+        //    //Assign to file
 
-        }
+        //}
     }
 }

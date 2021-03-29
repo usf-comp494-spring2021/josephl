@@ -76,23 +76,34 @@ namespace CalculatorLib
         }
 
         /*<summary>
-        *This method will find the median of a set of numbers
+        *This method will find the median of a set of numbers in
+        *an array with an even number of entries
         *</summary>
         *<param name = "numberArray"> Array of numbers </param>
         *<returns>The Median of the set of numbers passed to the function
         **/
-        public double findMedian(double[] numberArray)
+        public double findMedianEvenNumOfEntries(double[] numberArray)
+        {
+            Array.Sort(numberArray);
+            double Median;
+            Median = (numberArray.Length - (numberArray.Length) / 2);
+
+            return Median;
+        }
+
+        /*<summary>
+        *This method will find the median of a set of numbers in
+        *an array with an odd number of entries
+        *</summary>
+        *<param name = "numberArray"> Array of numbers </param>
+        *<returns>The Median of the set of numbers passed to the function
+        **/
+        public double findMedianOddNumOfEntries(double[] numberArray)
         {
             Array.Sort(numberArray);
             int Median;
-            if (numberArray.Length % 2 == 1)
-            {
-                Median = numberArray.Length - ((numberArray.Length - 1) / 2);
-            }
-            else
-            {
-                Median = numberArray.Length - (numberArray.Length / 2);
-            }
+            Median = numberArray.Length - ((numberArray.Length + 1) / 2);
+           
             return numberArray[Median];
         }
     }

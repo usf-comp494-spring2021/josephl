@@ -79,33 +79,53 @@ namespace CalculatorLibTest
         }
 
         [Fact]
-        public void TestMeanAndMedianFunctions()
+        public void TestMeanFunction()
         {
             //Arrange
-            string[] initialArray = System.IO.File.ReadAllLines("C: /Users/joesc/OneDrive/Desktop/C#/gitRepo/HW03/CalculatorLibTest/CalcInput.txt");
-            double[] numberArray = new double[15];
-            for (int i = 0; i < initialArray.Length; i++)
-            {
-                numberArray[i] = Convert.ToDouble(initialArray[i]);
-            }
+
+            double[] numberArray = {1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0,
+            11.0, 12.0, 13.0, 14.0, 15.0};
             var calc = new Calculator();
- 
-            //Act
-            double expectedMeanResult = 8.0;
-            double actualMeanResult = calc.findMean(numberArray);
-
-            //Assert
-            Assert.Equal(expectedMeanResult, actualMeanResult);
 
             //Act
-            double expectedMedianResult = 8.0;
-            double actualMedianResult = calc.findMedian(numberArray);
+            double expectedMean = 8.0;
+            double actualMean = calc.findMean(numberArray);
 
             //Assert
-            Assert.Equal(expectedMedianResult, actualMedianResult);
+            Assert.Equal(expectedMean, actualMean);
+        }
 
-            System.Console.WriteLine($"{actualMeanResult}, {actualMedianResult}");
+        [Fact]
+        public void TestMedianOddEntriesFunction()
+        {
+            //Arrange
+            double[] numberArray = {1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0,
+            11.0, 12.0, 13.0, 14.0, 15.0};
+            var calc = new Calculator();
 
+
+            //Act
+            double expectedMedian = 8.0;
+            double actualMedian = calc.findMedianOddNumOfEntries(numberArray);
+
+            //Assert
+            Assert.Equal(expectedMedian, actualMedian);
+        }
+
+        [Fact]
+        public void TestMedianEvenEntriesFunction()
+        {
+            //Arrange
+            double[] numberArray = {1.0, 2.0, 3.0, 4.0, 5.0, 6.0, 7.0, 8.0, 9.0, 10.0,
+            11.0, 12.0, 13.0, 14.0};
+            var calc = new Calculator();
+
+            //Act
+            double expectedMedian = 7.0;
+            double actualMedian = calc.findMedianEvenNumOfEntries(numberArray);
+
+            //Assert
+            Assert.Equal(expectedMedian, actualMedian);
         }
     }
 }
