@@ -38,7 +38,11 @@ namespace MVCProject.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
-
+        /*<summary>
+        *This method Gets the information needed to display the forecast
+        *</summary>
+        *<returns>The normal forecast view
+        **/
         public async Task<IActionResult> Weather()
         {
             string uri;
@@ -59,7 +63,11 @@ namespace MVCProject.Controllers
 
             return View(model);
         }
-
+        /*<summary>
+        *This method Gets the information needed to display the hourly forecast
+        *</summary>
+        *<returns>The hourly forecast view
+        **/
         public async Task<IActionResult> HourlyForecast()
         {
             string uri;
@@ -80,7 +88,11 @@ namespace MVCProject.Controllers
 
             return View(model);
         }
-
+        /*<summary>
+        *This method Gets the information needed to display the detailed forecast
+        *</summary>
+        *<returns>The detailed forecast view
+         **/
         public async Task<IActionResult> DetailedForecast()
         {
             string uri;
