@@ -1,0 +1,30 @@
+﻿@model IEnumerable<HourlyForecast>
+
+@foreach (var item in Model)
+{
+    <h2>@ViewData["Title"]</h2>
+
+    <p><b>Forecast Date: </b>@item.forecastDate</p>
+
+    <p><b>Temperature: </b>@item.temperature</p>
+
+    <p><b>Feels Like: </b>@item.feelsLike</p>
+
+    <p><b>Desciptor: </b>@item.descriptor</p>
+
+    <p><b>Image Path: </b>@item.imagePath</p>
+
+    <p><b>Wind Speed: </b>@item.windSpeed</p>
+
+    <p><b>Wind Direction: </b>@item.windDirection</p>
+
+    <p><b>Percipiation Percent: </b>@item.percipitationPercent</p>
+
+    <p><b>Percipitation Amount: </b>@item.percipitationAmount</p>
+
+    <p><b>Cloud Cover: </b>@item.cloudCover</p>
+
+    <p><b>Dew Point: </b>@item.dewPoint</p>
+
+    <p><b>Humidity: </b>@item.humidity</p>
+}
